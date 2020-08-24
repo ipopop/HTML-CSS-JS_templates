@@ -14,7 +14,7 @@
 
 @font-face {
   font-family: 'Bush';
-  src: url('fonts/BushMarket-Regular.woff');
+  src: url('../fonts/BushMarket-Regular.woff');
 }
 
 body {
