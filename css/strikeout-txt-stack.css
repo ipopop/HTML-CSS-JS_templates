@@ -1,0 +1,83 @@
+*, ::before, ::after {
+  --light: rgb(252, 251, 249);
+  --mid: #666;
+  --dark: #333;
+  --color-1: #ed126a;
+  --color-2:  hsla(92, 100%, 50%, 0.8);
+  --font-size: 8vw;
+  --height: calc(var(--font-size) * 0.25);
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: var(--color-1);
+}
+
+:root {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  background: var(--dark);
+}
+
+body {
+  max-width: 1200px;
+  width: 800px;
+  min-width: 360px;
+  height: 100vh;
+  padding: 15vw;
+}
+
+.stack {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.stack span {
+  position: relative;
+  font-variant-caps: small-caps;
+  font-size: var(--font-size);
+  font-weight: bolder;
+  letter-spacing: 10px;
+}
+
+.line {
+  width: calc(75% - var(--font-size) + 25vw);
+  background: var(--color-2);
+  height: var(--height);
+  border-radius: var(--height);
+  margin: var(--height) auto 0;
+  position: absolute;
+  z-index: 1;
+}
+
+span:nth-child(odd) {   /* or 'even' */
+z-index: 2;
+}
+
+.space {
+  width: calc(var(--font-size) / 2);
+  opacity: 0;
+}
+
+@media screen and (max-width: 750px) {
+  
+  .stack span {
+    font-size: calc(var(--font-size) * .8);
+  }
+
+}
+
+@media screen and (max-width: 360px) {
+  
+  .stack span {
+    font-size: 23px;
+  }
+
+  .line {
+    height: 7px;
+  }
+
+}

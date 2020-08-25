@@ -15,10 +15,10 @@ allBoxes.forEach(box => {
         triggerElement: allCircles[i],
         offset: 0,
 		    triggerHook: 0.4,
-        reverse: false
+        reverse: false  // set it to 'true' for scroll up effect
       })
       .setTween(tween)
-      .addIndicators()
+      // .addIndicators()  // for show 'triggers & hooks'
       .addTo(controller)
     }
   }
