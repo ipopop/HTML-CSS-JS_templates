@@ -2,8 +2,8 @@
   --light: rgb(252, 251, 249);
   --dark: #333;
   --mid: #666;
-  --color-1: teal;
-  --color-2:  hsla(75, 78%, 35%, 0.9);
+  --color-1: #099985;
+  --color-2:  hsla(75, 80%, 45%, 0.9);
   --dist-y: 300px;
   --dist-1: 50px;
   --dist-2: 356px;
@@ -28,7 +28,7 @@ a:link, a:visited {
 h1 {
   text-align: center;
   color: var(--color-1);
-  padding: 120px 30px 75px;
+  padding: 100px 30px;
 }
 
 h2 {
@@ -43,13 +43,18 @@ a:link {
   color: var(--color-1);
 }
 
-.navbar, .footer {
+.navbar, .about, .footer {
   height: 200px;
   padding-top: 80px;
   text-align: center;
   font-size: 3rem;
   background: var(--mid);
   color: var(--dark);
+}
+
+.about {
+  background: var(--dark);
+  color: var(--mid);
 }
 
 .go {
@@ -62,7 +67,7 @@ a:link {
   background: var(--mid);
   position: relative;
   padding: var(--dist-1) 0 200px 0;
-  margin: 50px auto;
+  margin: 0px auto;
 }
 
 .line {

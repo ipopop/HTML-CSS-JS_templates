@@ -13,7 +13,9 @@ allBoxes.forEach(box => {
 
       let scene = new ScrollMagic.Scene({
         triggerElement: allCircles[i],
-        reverse: false
+        offset: 0,
+		    triggerHook: 0.4,
+        reverse: true
       })
       .setTween(tween)
       .addIndicators()
