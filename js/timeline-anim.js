@@ -15,7 +15,7 @@ allBoxes.forEach(box => {
         triggerElement: allCircles[i],
         offset: 0,
 		    triggerHook: 0.4,
-        reverse: true
+        reverse: false
       })
       .setTween(tween)
       .addIndicators()

@@ -1,7 +1,7 @@
 *, ::before, ::after {
   --light: rgb(252, 251, 249);
-  --dark: #333;
   --mid: #666;
+  --dark: #333;
   --color-1: #099985;
   --color-2:  hsla(75, 80%, 45%, 0.9);
   --dist-y: 300px;
@@ -18,6 +18,10 @@
 :root {
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
   background: var(--dark);
+}
+
+body {
+  min-width: 360px;
 }
 
 a:link, a:visited {
@@ -159,7 +163,7 @@ a:link {
   .box {
     left: calc(50% - 50px);
     width: 250px;
-    padding: 10px;
+    padding: 20px;
     left: 140px;
   }
 
